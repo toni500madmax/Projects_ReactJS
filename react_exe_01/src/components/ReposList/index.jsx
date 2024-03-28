@@ -8,15 +8,12 @@ export default function ReposList(nomeUsuario) {
 
   useEffect(() => {
     setCarregando(true);
-    fetch("https://api.github.com/users/toni500madmax/repos")
+    fetch(`https://api.github.com/users/${nomeUsuario}/repos`)
       .then((res) => res.json())
       .then((resJson) => {
-        console.log("Carregando");
         setTimeout(() => {
           setCarregando(false);
           setRepos(resJson);
-          console.log("Carregado");
-          console.log(resJson);
         }, 3000);
       });
   }, [nomeUsuario]);

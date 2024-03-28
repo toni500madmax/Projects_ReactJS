@@ -1,0 +1,31 @@
+.header {
+  padding: 10px 0;
+  background-color: #729B79;
+  text-align: center;
+  border-bottom: 0.5px dashed black;
+}
+
+.header__title {
+  font-size: 36px;
+  color: #f5f5f5;
+}
+
+.card {
+  margin-top: 16px;
+  padding: 10px;
+  border-radius: 15px;
+  border: .5px dashed black;
+  background: #729B79;
+}
+
+.resultado {
+  width: 50%;
+}
+
+.resultado__title {
+  color: #2E2C2F;
+}
+
+.resultado__valor {
+  color: #2E2C2F;
+}
