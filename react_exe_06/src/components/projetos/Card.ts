@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  border: 1px solid #c1c1c1;
+  border: 1px solid ${(props) => props.theme.corCardBorda};
   border-radius: 6px;
   padding: 8px;
 `;
 
 export const ButtonLink = styled.button`
-  color: #fff;
+  color: ${(props) => props.theme.corFundo};
   font-size: 14px;
   text-decoration: none;
-  background-color: #4476bf;
+  background-color: ${(props) => props.theme.corFundoBtn};
   padding: 6px;
   border: none;
   border-radius: 3px;

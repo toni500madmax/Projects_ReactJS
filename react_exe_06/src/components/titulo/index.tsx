@@ -8,7 +8,7 @@ export type Props = {
 
 const Title = (props: Props) => {
   return (
-    <H3 fontSize={props.fontSize} margin={(props.margin)}>
+    <H3 fontSize={props.fontSize} margin={props.margin}>
       {props.children}
     </H3>
   );

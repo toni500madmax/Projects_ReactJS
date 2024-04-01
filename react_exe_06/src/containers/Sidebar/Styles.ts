@@ -10,9 +10,9 @@ export const Btn = styled.button`
   font-size: 10px;
   font-weight: bold;
   border-radius: 12px;
-  color: #eee;
+  color: ${(props) => props.theme.corFundo};
   padding: 8px;
-  background-color: #282a35;
+  background-color: ${(props) => props.theme.corPrincipal};
   cursor: pointer;
 `;
 
