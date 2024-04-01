@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from "styled-components";
-import { Props } from "../Sidebar/Sidebar";
 
 const StyleGlobal = createGlobalStyle`
 * {
@@ -12,6 +11,7 @@ const StyleGlobal = createGlobalStyle`
 
   body {
     padding-top: 80px;
+    padding-bottom: 80px;
   }
 `;
 
@@ -25,16 +25,12 @@ export const Container = styled.div`
   grid-template-columns: 128px auto;
   column-gap: 56px;
 
-  img {
-    max-width: 100%;
-  }
-
   @media screen and (max-width: 767px) {
     width: 80%;
     display: block;
-  }
-`;
 
-export const IMG = styled.img<Props>`
-  border-radius: ${(props) => (props.avatar === true ? `50%` : `2px`)};
+    img {
+      max-width: 100%;
+    }
+  }
 `;

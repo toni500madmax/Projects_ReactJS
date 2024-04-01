@@ -1,21 +1,24 @@
+import { Avatar } from "../../components/avatar";
+import { Paragrafo } from "../../components/paragrafo";
 import Title from "../../components/titulo";
-import { IMG } from "../Styles/Style";
-
-export type Props = {
-  avatar?: boolean;
-};
+import { Descricao, Btn, SideContainer } from "./Styles";
 
 const Sidebar = () => {
   return (
     <aside>
-      <IMG
-        avatar={true}
-        src="https://github.com/toni500madmax.png"
-        alt="meu avatar"
-      />
-      <Title fontSize={22} margin={true}>
-        Antonio Luiz
-      </Title>
+      <SideContainer>
+        <Avatar />
+        <Title fontSize={22} margin={true}>
+          Antonio Luiz
+        </Title>
+        <Paragrafo fontSize={16} tipo="secundario">
+          @toni500madmax
+        </Paragrafo>
+        <Descricao tipo="principal" fontSize={11}>
+          Engenheiro Front-End
+        </Descricao>
+        <Btn>Trocar Tema</Btn>
+      </SideContainer>
     </aside>
   );
 };
