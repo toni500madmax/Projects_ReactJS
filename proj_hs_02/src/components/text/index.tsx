@@ -15,3 +15,16 @@ export const Text = (props: TextModel) => {
     </>
   );
 };
+
+export type LinkProps = {
+  children: string;
+  Link: string;
+};
+
+export const ForgetPassword = (props: LinkProps) => {
+  return <a href={props.Link}>{props.children}</a>;
+};
+
+export const Login = (props: LinkProps) => {
+  return <a href={props.Link}>{props.children}</a>;
+};
